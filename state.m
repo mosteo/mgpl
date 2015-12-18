@@ -1,6 +1,9 @@
 classdef state < handle
    
 properties
+    data % Use this to store whatever
+    % Alternatively create a descendant with the needed fields
+    
     path
 end
 
