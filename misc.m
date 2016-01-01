@@ -13,6 +13,14 @@ methods(Static)
         end
     end
     
+    function dst = copyfields(dst, src)
+        fields = fieldnames (src);
+
+        for f = 1:length(fields)
+            dst.(fields{f}) = src.(fields{f});
+        end
+    end
+    
 end
     
 end
